@@ -72,7 +72,10 @@ class NewsCategoryClassifier:
             ...
         }
         """
-        return {}
+        embeddings = self.pipeline['transformer_featurizer'].transform([model_input['description']])
+        prob_array = self.pipeline['classifier'].predict_proba(embeddings)[0]
+        output_prob = {l_class:prob_array[i] for i, l_class in enumerate(self.classes)}
+        return output_prob
 
     def predict_label(self, model_input: dict) -> str:
         """
@@ -83,4 +86,5 @@ class NewsCategoryClassifier:
 
         Output format: predicted label for the model input
         """
-        return ""
+        embeddings = self.pipeline['transformer_featurizer'].transform([model_input['description']])
+        return self.pipeline['classifier'].predict(embeddings)[0]

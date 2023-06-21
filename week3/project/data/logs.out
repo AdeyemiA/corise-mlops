@@ -1,0 +1,58 @@
+2023-06-21 05:54:40.274 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 05:54:40.567 | INFO     | server:startup_event:46 - Setup completed
+2023-06-21 05:59:02.145 | INFO     | server:shutdown_event:58 - Shutting down application
+2023-06-21 05:59:43.892 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 05:59:44.123 | INFO     | server:startup_event:49 - Setup completed
+2023-06-21 05:59:44.827 | INFO     | server:shutdown_event:61 - Shutting down application
+2023-06-21 05:59:52.563 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 05:59:52.794 | INFO     | server:startup_event:49 - Setup completed
+2023-06-21 06:00:05.724 | INFO     | server:shutdown_event:61 - Shutting down application
+2023-06-21 06:00:08.712 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:00:08.936 | INFO     | server:startup_event:49 - Setup completed
+2023-06-21 06:00:23.471 | INFO     | server:shutdown_event:61 - Shutting down application
+2023-06-21 06:00:26.310 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:00:26.566 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:01:53.561 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:01:56.539 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:01:56.786 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:01:58.392 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:02:01.450 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:02:01.676 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:03:31.589 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:03:34.719 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:03:34.946 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:04:36.894 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:04:42.503 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:04:42.839 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:04:45.449 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:04:49.608 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:04:49.936 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:05:38.864 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:05:43.999 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:05:44.297 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:05:47.106 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:05:50.342 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:05:50.587 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:05:53.898 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:05:57.145 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:05:57.403 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:09:48.459 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:09:51.373 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:09:51.600 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 06:09:55.611 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 06:09:58.510 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 06:09:58.747 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 15:59:33.624 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 15:59:33.935 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 16:01:55.018 | INFO     | server:shutdown_event:64 - Shutting down application
+2023-06-21 16:02:17.278 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 16:02:17.540 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 16:02:25.991 | INFO     | server:predict:116 - {'timestamp': '2023:06:21 16:02:25', 'request': {'source': 'BBC Technology', 'url': 'http://news.bbc.co.uk/go/click/rss/0.91/public/-/2/hi/business/4144939.stm', 'title': 'System gremlins resolved at HSBC', 'description': 'Computer glitches which led to chaos for HSBC customers on Monday are fixed, the High Street bank confirms.'}, 'prediction': {'scores': {'Business': 0.45508134508141174, 'Entertainment': 0.1300006227061416, 'Health': 0.03255698994829775, 'Music Feeds': 0.004118623331834493, 'Sci/Tech': 0.30054289797623596, 'Software and Developement': 0.011333338530119487, 'Sports': 0.06041371248152639, 'Toons': 0.00595246994443263}, 'label': 'Business'}, 'latency': 0.03916001319885254}
+2023-06-21 16:03:29.130 | INFO     | server:shutdown_event:64 - Shutting down application
+{"text": "2023-06-21 16:06:22.211 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib\n", "record": {"elapsed": {"repr": "0:00:02.701409", "seconds": 2.701409}, "exception": null, "extra": {}, "file": {"name": "classifier.py", "path": "/workspace/corise-mlops/week3/project/app/classifier.py"}, "function": "load", "level": {"icon": "ℹ️", "name": "INFO", "no": 20}, "line": 57, "message": "Loaded trained model pipeline from: ../data/news_classifier.joblib", "module": "classifier", "name": "classifier", "process": {"id": 2537, "name": "SpawnProcess-1"}, "thread": {"id": 140011676268352, "name": "MainThread"}, "time": {"repr": "2023-06-21 16:06:22.211969+00:00", "timestamp": 1687363582.211969}}}
+{"text": "2023-06-21 16:06:22.471 | INFO     | server:startup_event:52 - Setup completed\n", "record": {"elapsed": {"repr": "0:00:02.960921", "seconds": 2.960921}, "exception": null, "extra": {}, "file": {"name": "server.py", "path": "/workspace/corise-mlops/week3/project/app/server.py"}, "function": "startup_event", "level": {"icon": "ℹ️", "name": "INFO", "no": 20}, "line": 52, "message": "Setup completed", "module": "server", "name": "server", "process": {"id": 2537, "name": "SpawnProcess-1"}, "thread": {"id": 140011676268352, "name": "MainThread"}, "time": {"repr": "2023-06-21 16:06:22.471481+00:00", "timestamp": 1687363582.471481}}}
+{"text": "2023-06-21 16:06:48.001 | INFO     | server:predict:116 - {'timestamp': '2023:06:21 16:06:48', 'request': {'source': 'BBC Technology', 'url': 'http://news.bbc.co.uk/go/click/rss/0.91/public/-/2/hi/business/4144939.stm', 'title': 'System gremlins resolved at HSBC', 'description': 'Computer glitches which led to chaos for HSBC customers on Monday are fixed, the High Street bank confirms.'}, 'prediction': {'scores': {'Business': 0.45508134508141174, 'Entertainment': 0.1300006227061416, 'Health': 0.03255698994829775, 'Music Feeds': 0.004118623331834493, 'Sci/Tech': 0.30054289797623596, 'Software and Developement': 0.011333338530119487, 'Sports': 0.06041371248152639, 'Toons': 0.00595246994443263}, 'label': 'Business'}, 'latency': 0.0622100830078125}\n", "record": {"elapsed": {"repr": "0:00:28.491292", "seconds": 28.491292}, "exception": null, "extra": {}, "file": {"name": "server.py", "path": "/workspace/corise-mlops/week3/project/app/server.py"}, "function": "predict", "level": {"icon": "ℹ️", "name": "INFO", "no": 20}, "line": 116, "message": "{'timestamp': '2023:06:21 16:06:48', 'request': {'source': 'BBC Technology', 'url': 'http://news.bbc.co.uk/go/click/rss/0.91/public/-/2/hi/business/4144939.stm', 'title': 'System gremlins resolved at HSBC', 'description': 'Computer glitches which led to chaos for HSBC customers on Monday are fixed, the High Street bank confirms.'}, 'prediction': {'scores': {'Business': 0.45508134508141174, 'Entertainment': 0.1300006227061416, 'Health': 0.03255698994829775, 'Music Feeds': 0.004118623331834493, 'Sci/Tech': 0.30054289797623596, 'Software and Developement': 0.011333338530119487, 'Sports': 0.06041371248152639, 'Toons': 0.00595246994443263}, 'label': 'Business'}, 'latency': 0.0622100830078125}", "module": "server", "name": "server", "process": {"id": 2537, "name": "SpawnProcess-1"}, "thread": {"id": 140007478130240, "name": "AnyIO worker thread"}, "time": {"repr": "2023-06-21 16:06:48.001852+00:00", "timestamp": 1687363608.001852}}}
+{"text": "2023-06-21 16:09:38.856 | INFO     | server:shutdown_event:64 - Shutting down application\n", "record": {"elapsed": {"repr": "0:03:19.346142", "seconds": 199.346142}, "exception": null, "extra": {}, "file": {"name": "server.py", "path": "/workspace/corise-mlops/week3/project/app/server.py"}, "function": "shutdown_event", "level": {"icon": "ℹ️", "name": "INFO", "no": 20}, "line": 64, "message": "Shutting down application", "module": "server", "name": "server", "process": {"id": 2537, "name": "SpawnProcess-1"}, "thread": {"id": 140011676268352, "name": "MainThread"}, "time": {"repr": "2023-06-21 16:09:38.856702+00:00", "timestamp": 1687363778.856702}}}
+2023-06-21 16:09:42.483 | INFO     | classifier:load:57 - Loaded trained model pipeline from: ../data/news_classifier.joblib
+2023-06-21 16:09:42.789 | INFO     | server:startup_event:52 - Setup completed
+2023-06-21 16:38:24.087 | INFO     | server:shutdown_event:64 - Shutting down application

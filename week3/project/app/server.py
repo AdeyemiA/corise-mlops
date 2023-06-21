@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from loguru import logger
+from datetime import datetime
+import time
 
 from classifier import NewsCategoryClassifier
 
@@ -11,10 +13,16 @@ class PredictRequest(BaseModel):
     title: str
     description: str
 
+    def model_dump(self, *args, **kwargs) -> dict:
+        super().model_dump(*args, **kwargs)
+
 
 class PredictResponse(BaseModel):
     scores: dict
     label: str
+
+    def model_dump(self, *args, **kwargs) -> dict:
+        super().model_dump(*args, **kwargs)
 
 
 MODEL_PATH = "../data/news_classifier.joblib"
@@ -34,6 +42,13 @@ def startup_event():
     Access to the model instance and log file will be needed in /predict endpoint, make sure you
     store them as global variables
     """
+    global classifier
+    global log_handler_id
+
+    log_handler_id = logger.add(LOGS_OUTPUT_PATH, enqueue=True)    
+
+    classifier = NewsCategoryClassifier()
+    classifier.load(MODEL_PATH)
     logger.info("Setup completed")
 
 
@@ -45,7 +60,12 @@ def shutdown_event():
     1. Make sure to flush the log file and close any file pointers to avoid corruption
     2. Any other cleanups
     """
+    classifier = None
     logger.info("Shutting down application")
+    try:
+        logger.remove(log_handler_id)
+    except:
+        print("Exception cleaning up the log file handle")
 
 
 @app.post("/predict", response_model=PredictResponse)
@@ -65,7 +85,35 @@ def predict(request: PredictRequest):
     }
     3. Construct an instance of `PredictResponse` and return
     """
-    response = PredictResponse(scores={"label1": 0.9, "label2": 0.1}, label="label1")
+    request_dict = {
+        'source': request.source,
+        'url': request.url,
+        'title': request.title,
+        'description': request.description
+    }
+
+    start = time.time()
+    
+    pred_label = classifier.predict_label(request_dict)
+    label_prob = classifier.predict_proba(request_dict)
+
+    end = time.time()
+    latency = end - start
+
+    response = PredictResponse(scores={**label_prob}, label=pred_label)
+    response_dict = {
+        'scores': label_prob,
+        'label': pred_label
+    }
+
+    log_etnry = {
+        'timestamp': datetime.now().strftime('%Y:%m:%d %H:%M:%S'),
+        'request': request_dict,
+        'prediction': response_dict,
+        'latency': latency
+    }
+
+    logger.info(log_etnry)
     return response
 
 
