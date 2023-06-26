@@ -13,16 +13,10 @@ class PredictRequest(BaseModel):
     title: str
     description: str
 
-    def model_dump(self, *args, **kwargs) -> dict:
-        super().model_dump(*args, **kwargs)
-
 
 class PredictResponse(BaseModel):
     scores: dict
     label: str
-
-    def model_dump(self, *args, **kwargs) -> dict:
-        super().model_dump(*args, **kwargs)
 
 
 MODEL_PATH = "../data/news_classifier.joblib"
